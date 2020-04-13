@@ -789,13 +789,9 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- Remove unused AOSP repos -->
+  <!-- Include our manifest -->
   <include name="snippets/remove.xml" />
-
-  <!-- Add some LineageOS repos -->
   <include name="snippets/lineage.xml" />
-
-  <!-- Add all PixelExperience repos -->
-  <include name="snippets/pixel.xml" />
+  <include name="snippets/lime.xml" />
 
 </manifest>
