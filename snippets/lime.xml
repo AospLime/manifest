@@ -22,9 +22,9 @@
           fetch="https://gitlab.com" />
 
   <!-- CodeAurora additions -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
-  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="pixel" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lime" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lime" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lime" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -50,12 +50,12 @@
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
   </project>
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
-  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="pixel" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
-  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="lime" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="lime" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="lime" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="lime" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="lime" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="lime" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="lime" />
@@ -127,15 +127,15 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="lime" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="lime" />
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
-  <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
+  <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="lime" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lime" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="lime" />
 
   <!-- External repos -->
-  <project path="external/libcxx" name="external_libcxx" remote="pixel" />
+  <project path="external/libcxx" name="external_libcxx" remote="lime" />
   <project path="external/libhevc" name="external_libhevc" remote="lime" />
-  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="pixel" />
-  <project path="external/skia" name="external_skia" remote="pixel" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="lime" />
+  <project path="external/skia" name="external_skia" remote="lime" />
   <project path="external/tinycompress" name="external_tinycompress" remote="lime" />
 
   <!-- System Repos -->
