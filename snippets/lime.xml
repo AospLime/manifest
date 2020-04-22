@@ -83,6 +83,7 @@
   <project path="manifest" name="manifest" remote="lime" />
   <project path="platform_testing" name="platform_testing" remote="lime" />
   <project path="vendor/lime" name="vendor_lime" remote="lime" />
+  <project path="vendor/limeui" name="vendor_limeui" remote="lime" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
 
   <!-- Hardware repos -->
