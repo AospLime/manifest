@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="pixel"
-          fetch="https://github.com/PixelExperience"
-          revision="ten"
-          review="gerrit.pixelexperience.org" />
-
   <remote name="lime"
           fetch="https://github.com/AospLime"
           revision="ten" />
@@ -25,7 +20,7 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lime" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lime" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lime" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="lime">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- for AOSP sdm845, we override os_pickup.mk -->
@@ -68,7 +63,7 @@
   <!-- General repos -->
   <project path="art" name="art" remote="lime" />
   <project path="bionic" name="bionic" remote="lime" />
-  <project path="build/make" name="build" remote="lime">
+  <project path="build/make" name="build_make" remote="lime">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -87,10 +82,8 @@
   <project path="device/lime/sepolicy" name="device_lime_sepolicy" remote="lime" />
   <project path="manifest" name="manifest" remote="lime" />
   <project path="platform_testing" name="platform_testing" remote="lime" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="lime" />
+  <project path="vendor/lime" name="vendor_lime" remote="lime" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="lime" />
-  <project path="vendor/google/customization" name="vendor_google_customization" remote="lime" />
 
   <!-- Hardware repos -->
   <project path="hardware/lime/interfaces" name="hardware_lime_interfaces" remote="lime" />
@@ -115,7 +108,6 @@
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" groups="pdk-fs" remote="lime" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="lime" />
   <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" groups="pdk-fs" remote="lime" />
-  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" groups="pdk-fs" remote="lime" />
   <project path="packages/apps/LimeJuice" name="packages_apps_LimeJuice" remote="lime" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="lime" />
@@ -127,8 +119,8 @@
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="lime" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="lime" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="lime" />
-  <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="lime" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="lime" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lime" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="lime" />
 
