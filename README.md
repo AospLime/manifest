@@ -63,7 +63,7 @@ lunch aosp_DEVICE_NAME-userdebug
 
 - Start the compilation.
 ```
-mka bacon -j$(nproc --all)
+mka carthage -j$(nproc --all)
 ```
 
 ## Notes
