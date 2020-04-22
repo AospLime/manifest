@@ -127,7 +127,6 @@
   <!-- External repos -->
   <project path="external/libcxx" name="external_libcxx" remote="lime" />
   <project path="external/libhevc" name="external_libhevc" remote="lime" />
-  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="lime" />
   <project path="external/skia" name="external_skia" remote="lime" />
   <project path="external/tinycompress" name="external_tinycompress" remote="lime" />
 
