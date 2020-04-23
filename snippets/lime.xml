@@ -85,6 +85,7 @@
   <project path="vendor/lime" name="vendor_lime" remote="lime" />
   <project path="vendor/limeui" name="vendor_limeui" remote="lime" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/themes" name="vendor_themes" remote="lime" />
 
   <!-- Hardware repos -->
   <project path="hardware/lime/interfaces" name="hardware_lime_interfaces" remote="lime" />
