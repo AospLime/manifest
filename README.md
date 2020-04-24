@@ -58,7 +58,7 @@ Now, let's start compilation
 
 - Pick target device.
 ```
-lunch aosp_DEVICE_NAME-userdebug
+lunch lime_DEVICE_NAME-userdebug
 ```
 
 - Start the compilation.
