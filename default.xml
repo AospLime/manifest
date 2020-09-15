@@ -2,8 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+		   
   <default revision="refs/tags/android-11.0.0_r3"
            remote="aosp"
            sync-j="4" />
@@ -825,4 +826,8 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- AyasakuraProject additional -->
+  <include name="manifests/obsolete.xml" />
+  <include name="manifests/lime.xml" />
+  
 </manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Repos of RevengeOS -->
+<manifest>
+
+  <remote  name="lime"
+           fetch="https://github.com/AospLime"
+           revision="eleven" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+  
+  <!-- build -->
+  <project path="build/make" name="build_make" remote="lime" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="lime" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="bionic" name="bionic" remote="lime" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="lime" />
+  <project path="development" name="development" remote="lime" />
+
+  <!-- Devices -->
+  <project path="device/lime/sepolicy" name="device_lime_sepolicy" remote="lime" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lime" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lime" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lime" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="lime" />
+
+  <!-- frameworks -->
+  <project path="external/selinux" name="external_selinux" remote="lime" />
+  
+  <!-- Hardware -->
+  <project path="hardware/lime/interfaces" name="hardware_lime_interfaces" remote="lime" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="lime" />
+  <project path="hardware/libhardware-legacy" name="hardware_libhardware-legacy" remote="lime" />
+  
+  <!-- packages -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-17.1" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" remote="lime" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="lime" />
+
+  <!-- Vendor -->
+  <project path="vendor/lime" name="vendor_lime" remote="lime" />
+  <project path="vendor/limeui" name="vendor_limeui" remote="lime" revision="ten" />
+  
+</manifest>
