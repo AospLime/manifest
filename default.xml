@@ -829,5 +829,6 @@
   <!-- AyasakuraProject additional -->
   <include name="manifests/obsolete.xml" />
   <include name="manifests/lime.xml" />
+  <include name="manifests/external.xml" />
   
 </manifest>
